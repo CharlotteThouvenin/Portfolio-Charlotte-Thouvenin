@@ -1,0 +1,40 @@
+const traduction = {
+    en: {
+        aboutMeTitle: "About me",
+        aboutMeDescription: "After 10 years in retail, I decided to move into web development.",
+        aboutMeText: "I've always loved building things, learning new techniques, solving problems and admiring the results.",
+        timeLineTitle: "My background",
+        timeLineDate1: "November 2023 - April 2024",
+        timeLineTitle1: "Web Integration Training",
+        timeLineSubtitle1: "OpenClassRooms",
+        timeLineDate2: "March 2023 - July 2023",
+        timeLineTitle2: "Self-employment",
+        timeLineSubtitle2: "Real estate",
+        timeLineDate3: "2012 - 2022",
+        timeLineTitle3: "Marketing & Purchasing",
+        timeLineSubtitle3: "Retail",
+        timeLineDate4: "2012",
+        timeLineTitle4: "Management degree",
+        timeLineSubtitle4: "Business School",
+    },
+    fr: {
+        aboutMeTitle: "A propos",
+        aboutMeDescription: "Après 10 ans en grande distribution, j'ai décidé de me reconvertir dans le developpement web.",
+        aboutMeText: "J'ai toujours aimé construire des choses, apprendre de nouvelles techniques, résoudre des problèmes et admirer le résultat.",
+        timeLineTitle: "Mon parcours",
+        timeLineDate1: "Novembre 2023 - Avril 2024",
+        timeLineTitle1: "Formation Intégrateur Web",
+        timeLineSubtitle1: "OpenClassRooms",
+        timeLineDate2: "Mars 2023 - Juillet 2023",
+        timeLineTitle2: "Auto-entrepreneur",
+        timeLineSubtitle2: "Immobilier",
+        timeLineDate3: "2012 - 2022",
+        timeLineTitle3: "Marketing et achats",
+        timeLineSubtitle3: "Grande distribution",
+        timeLineDate4: "2012",
+        timeLineTitle4: "Diplôme en management",
+        timeLineSubtitle4: "Ecole de commerce",
+    }
+}
+
+export default traduction;

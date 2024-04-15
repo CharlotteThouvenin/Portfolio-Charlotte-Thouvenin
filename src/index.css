@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --background: #FAFEFD;
+  --background2: #E1F7F4;
+  --muted: 353 23% 91%;
+  --muted-foreground: 353 9% 26%;
+  --popover: 173 64% 99%;
+  --popover-foreground: 173 56% 0%;
+  --card: 173 64% 99%;
+  --card-foreground: 173 56% 0%;
+  --border: 173 10% 89%;
+  --input: 173 10% 89%;
+  --primary: #007F76;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 353 92% 27%;
+  --secondary-foreground: 353 92% 87%;
+  --accent: 353 92% 27%;
+  --accent-foreground: 353 92% 87%;
+  --destructive: 5 82% 38%;
+  --destructive-foreground: 5 82% 98%;
+  --ring: 173 92% 27%;
+  --radius: 0.5rem;
+  --text: #1E1F24;
+  --bannertext: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="dark"] {
+  --background: #0B1312;
+  --background2: #042D25;
+  --foreground: 173 24% 97%;
+  --muted: 353 23% 9%;
+  --muted-foreground: 353 9% 74%;
+  --popover: 173 44% 4%;
+  --popover-foreground: 173 24% 97%;
+  --card: 173 44% 4%;
+  --card-foreground: 173 24% 97%;
+  --border: 173 10% 10%;
+  --input: 173 10% 10%;
+  --primary: #007A66;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 353 92% 27%;
+  --secondary-foreground: 353 92% 87%;
+  --accent: 353 92% 27%;
+  --accent-foreground: 353 92% 87%;
+  --destructive: 5 82% 53%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 173 92% 27%;
+  --text: #EEEEF0;
+  --bannertext: white;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Montserrat';
+  color: var(--primary)
+}
+
+.banner {
+  color: var(--bannertext)
 }

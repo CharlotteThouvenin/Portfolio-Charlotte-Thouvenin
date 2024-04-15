@@ -1,0 +1,19 @@
+.badge {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    min-width: 100px;
+    background-color: var(--primary);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    gap: 5px;
+    padding: 5px 10px;
+
+    &-icon {
+        width: fit-content;
+        height: fit-content;
+        align-items: center;
+    }
+}

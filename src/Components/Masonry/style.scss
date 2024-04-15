@@ -1,0 +1,56 @@
+.card:hover {
+    animation: example 0.2s ease-in-out;
+
+    z-index: 100;
+    scale: 1.2;
+}
+
+
+
+
+.card-shadow {
+    display: none;
+}
+
+@keyframes example {
+    from {
+        scale: 1;
+
+    }
+
+    to {
+        scale: 1.2;
+
+    }
+}
+
+.card {
+    position: relative;
+    overflow: hidden; // Empêche les contenus débordants de s'afficher en dehors de la carte
+}
+
+.card-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); // Ombre noire semi-transparente
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; // Caché par défaut
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-shadow {
+    opacity: 1; // Afficher l'ombre au survol
+}
+
+.card-shadow .btn {
+    display: none; // Cacher le bouton par défaut
+}
+
+.card:hover .card-shadow .btn {
+    display: block; // Afficher le bouton au survol
+}
