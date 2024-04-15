@@ -1,19 +1,20 @@
+import React, { useState, useEffect, useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Offcanvas } from 'react-bootstrap';
 import SwitchLang from '../../Components/SwitchLang/SwitchLang';
-import './style.scss'
-import { useState, useEffect } from 'react';
-import traduction from "./traduction"
-import { useContext } from "react"
-import { LanguageContext } from "../../contextLang"
 import { UpButton } from '../../Components/Return';
-
+import traduction from "./traduction";
+import { LanguageContext } from "../../contextLang";
 
 function Header() {
-
-    const { language } = useContext(LanguageContext)
+    const { language } = useContext(LanguageContext);
     const [isVisible, setIsVisible] = useState(false);
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const toggleVisibility = () => {
         if (window.scrollY > 50) {
@@ -22,36 +23,45 @@ function Header() {
             setIsVisible(false);
         }
     };
+
     useEffect(() => {
         window.addEventListener('scroll', toggleVisibility);
-
         return () => {
             window.removeEventListener('scroll', toggleVisibility);
         };
     }, []);
 
-    return (
-        isVisible &&
+    return isVisible && (
         <div className={`header ${isVisible ? 'visible' : ''}`}>
-            <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary ">
+            <Navbar fixed="bottom" expand="md" className="bg-body-tertiary">
                 <Container>
-                    <Navbar.Brand href="#home">Charlotte Thouvenin</Navbar.Brand>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#home">{traduction[language].nav1}</Nav.Link>
-                            <Nav.Link href="#home">{traduction[language].nav2}</Nav.Link>
-                            <Nav.Link href="#home">{traduction[language].nav3}</Nav.Link>
-                            <Nav.Link href="#home">{traduction[language].nav4}</Nav.Link>
-                        </Nav>
+                    <Navbar.Brand href="#home" className='d-none d-md-block'>Charlotte Thouvenin</Navbar.Brand>
 
-                        <SwitchLang />
-                        <UpButton />
-                    </Navbar.Collapse>
+                    <Navbar.Toggle onClick={handleShow} aria-controls="offcanvasNavbar" />
+                    <Navbar.Offcanvas
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                        placement="end"
+                        show={show}
+                        onHide={handleClose}
+                    >
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title id="offcanvasNavbarLabel">Charlotte Thouvenin</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <Nav className="justify-content-end flex-grow-1 pe-3">
+                                <Nav.Link href="#home">{traduction[language].nav1}</Nav.Link>
+                                <Nav.Link href="#home">{traduction[language].nav2}</Nav.Link>
+                                <Nav.Link href="#home">{traduction[language].nav3}</Nav.Link>
+                                <Nav.Link href="#home">{traduction[language].nav4}</Nav.Link>
+                            </Nav>
+                        </Offcanvas.Body>
+                    </Navbar.Offcanvas>
+                    <SwitchLang />
+                    <UpButton />
                 </Container>
             </Navbar>
-
         </div>
-
     );
 }
 
