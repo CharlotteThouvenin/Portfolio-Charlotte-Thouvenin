@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { workData } from "../../Datas/projects"
 import WorkCard from "../../Components/Card";
 import Slider from "react-slick";
+import traduction from "./traduction"
 
 export const Portfolio = () => {
     const { language } = useContext(LanguageContext);
@@ -55,15 +56,15 @@ export const Portfolio = () => {
         ;
 
     return (
-        <div className="shadow-sm p-4 mb-5 bg-body rounded" id="portfolio">
-            <h1 className="p-4">Projets</h1>
+        <div className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="portfolio">
+            <h2>{traduction[language].title}</h2>
             <div className="">
                 <div className="d-flex justify-content-between p-4">
                     <button className="btn btn-secondary" onClick={previous}>
-                        Previous
+                        {traduction[language].previous}
                     </button>
                     <button className="btn btn-secondary" onClick={next}>
-                        Next
+                        {traduction[language].next}
                     </button>
                 </div>
                 <div className="slider-container">

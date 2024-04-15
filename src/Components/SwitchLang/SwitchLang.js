@@ -1,12 +1,18 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../contextLang";
-import './style.css';
+
 import Dropdown from 'react-bootstrap/Dropdown';
 
 export default function SwitchLang() {
-    const { switchLanguage } = useContext(LanguageContext);
-
-    // Modify handleChange to use the correct eventKey parameter
+    const { language, switchLanguage } = useContext(LanguageContext);
+    const languageTitle = {
+        en: {
+            title: "Language"
+        },
+        fr: {
+            title: "Langue"
+        }
+    }
     const handleChange = (eventKey) => {
         switchLanguage(eventKey);
     };
@@ -15,7 +21,7 @@ export default function SwitchLang() {
         <div className="select p-2">
             <Dropdown drop="up" onSelect={handleChange}>
                 <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                    Langue
+                    {languageTitle[language].title}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>

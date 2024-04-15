@@ -13,8 +13,8 @@ export const Skills = () => {
     ];
 
     return (
-        <div className="shadow-sm p-3 mb-5 bg-body rounded" id="skills">
-            <h1 className='p-4'>Compétences</h1>
+        <div className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="skills">
+            <h2 >Compétences</h2>
             <div className="skills-container d-flex justify-content-around flex-wrap">
                 {skillData.map((item, index) => (
                     <div className="skill-item" key={index}>

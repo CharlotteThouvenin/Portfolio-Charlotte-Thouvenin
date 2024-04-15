@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
+import traduction from "./traduction"
+import { useContext } from "react"
+import { LanguageContext } from "../../contextLang"
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -23,47 +26,49 @@ function ContactForm() {
         console.log(formData);
     };
 
+    const { language } = useContext(LanguageContext)
+
     return (
-        <div className="shadow-sm p-3 mb-5 bg-body rounded">
-            <h1 className='p-2'>Contact me</h1>
+        <div className="shadow-sm px-3 py-2 mb-5 bg-body rounded">
+            <h2>{traduction[language].title}</h2>
             <Container style={{ maxWidth: '600px' }}>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Label>Name</Form.Label>
+                        <Form.Label>{traduction[language].name}</Form.Label>
                         <Form.Control
                             type="text"
                             name="name"
-                            placeholder="Enter your name"
+                            placeholder={traduction[language].nameInput}
                             value={formData.name}
                             onChange={handleChange}
                             required />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label>{traduction[language].mail}</Form.Label>
                         <Form.Control
                             type="email"
                             name="email"
-                            placeholder="Enter your email"
+                            placeholder={traduction[language].mailInput}
                             value={formData.email}
                             onChange={handleChange}
                             required />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicMessage">
-                        <Form.Label>Message</Form.Label>
+                        <Form.Label>{traduction[language].message}</Form.Label>
                         <Form.Control
                             as="textarea"
                             rows={3}
                             name="message"
-                            placeholder="Type your message here"
+                            placeholder={traduction[language].messageInput}
                             value={formData.message}
                             onChange={handleChange}
                             required />
                     </Form.Group>
 
                     <Button variant="secondary" type="submit">
-                        Submit
+                        {traduction[language].button}
                     </Button>
                 </Form>
             </Container>

@@ -1,6 +1,4 @@
 import './App.css';
-import { SideNav } from './Components/SideNav';
-import { UpButton } from './Components/Return';
 import LanguageContextProvider from './contextLang';
 import { About } from './Sections/About/about';
 import Welcome from './Sections/Loader'
