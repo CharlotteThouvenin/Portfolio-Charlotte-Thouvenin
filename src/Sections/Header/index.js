@@ -50,10 +50,10 @@ function Header() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#portfolio">{traduction[language].nav1}</Nav.Link>
-                                <Nav.Link href="#skills">{traduction[language].nav2}</Nav.Link>
-                                <Nav.Link href="#about">{traduction[language].nav3}</Nav.Link>
-                                <Nav.Link href="#contact">{traduction[language].nav4}</Nav.Link>
+                                <Nav.Link href="#portfolio" onClick={handleClose}>{traduction[language].nav1}</Nav.Link>
+                                <Nav.Link href="#skills" onClick={handleClose}>{traduction[language].nav2}</Nav.Link>
+                                <Nav.Link href="#about" onClick={handleClose}>{traduction[language].nav3}</Nav.Link>
+                                <Nav.Link href="#contact" onClick={handleClose}>{traduction[language].nav4}</Nav.Link>
                             </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
