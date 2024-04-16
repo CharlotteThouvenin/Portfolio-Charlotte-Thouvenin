@@ -19,7 +19,7 @@ export default function SwitchLang() {
 
     return (
         <div className="select p-2">
-            <Dropdown drop="up" onSelect={handleChange}>
+            <Dropdown onSelect={handleChange}>
                 <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                     {languageTitle[language].title}
                 </Dropdown.Toggle>

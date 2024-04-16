@@ -10,15 +10,18 @@ import { Footer } from './Sections/Footer';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
+
 function App() {
   return (
     <LanguageContextProvider>
 
       <ParallaxProvider>
+
         <div className="App">
           <Welcome />
+          <Header />
+
           <div className='bg-dark'>
-            <Header />
 
             <div className='container py-4'>
               <Portfolio />

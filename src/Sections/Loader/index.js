@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import { LanguageContext } from "../../contextLang";
 import traduction from "./traduction";
 import Button from 'react-bootstrap/Button';
-
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 import "./style.scss"
 
@@ -26,33 +26,49 @@ export default function Welcome() {
 
             <div className="d-flex flex-column justify-content-between align-items-center flex-wrap mt-5">
 
-                <div className="text-center flex-column">
-                    <h1 className="welcome-title bg-dark p-2 rounded">{traduction[language].bannerTitle2}</h1>
-                    <h2 className="welcome-subtitle bg-dark p-2 rounded m-4">
-                        {traduction[language].bannerSubtitle}
-                    </h2>
-                </div>
-                <div className="mt-5">
-                    <div className="welcome-text w-50 mx-auto text-center bg-dark p-2 rounded">{traduction[language].bannerText}</div>
-                </div>
-            </div>
-            <div>
-                <Button>
-                    <i className="fa-brands fa-linkedin"></i><span>LinkedIn</span>
-                </Button>
-                <Button>
-                    <i class="fa-brands fa-square-github"></i><span>GitHub</span>
-                </Button>
-                <Button className="me-2" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
-                    <i class="fa-solid fa-circle-down"></i><span>CV</span>
-                </Button>
-            </div>
+                <h1 className="welcome-title p-2 rounded">{traduction[language].bannerTitle2}</h1>
+                <h2 className="welcome-subtitle p-2 rounded m-4">
+                    {traduction[language].bannerSubtitle}
+                </h2>
 
-            <div className="d-flex justify-content-center align-items-center pb-5">
-                <Button variant="secondary" size="lg" className="d-flex flex-column align-items-center button learnMore" href="#portfolio">
-                    <span>{traduction[language].bannerButton}</span>
-                    <i className="fa-solid fa-circle-arrow-down"></i>
-                </Button>
+            </div>
+            <div className="d-flex flex-row justify-content-center pt-5">
+                <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                        <Tooltip id="tooltip-right">
+                            {traduction[language].tooltipLinkedIn}
+                        </Tooltip>
+                    }
+                >
+                    <Button className="m-4 fs-5" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
+                        <i className="fa-brands fa-linkedin"></i>
+                    </Button>
+                </OverlayTrigger>
+                <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                        <Tooltip id="tooltip-right">
+                            {traduction[language].tooltipGit}
+                        </Tooltip>
+                    }
+                >
+                    <Button className="m-4 fs-5" variant="dark" href="https://github.com/CharlotteThouvenin" target="blank" >
+                        <i className="fa-brands fa-square-github"></i>
+                    </Button>
+                </OverlayTrigger>
+                <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                        <Tooltip id="tooltip-right">
+                            {traduction[language].tooltipDownload}
+                        </Tooltip>
+                    }
+                >
+                    <Button className="m-4 fs-5" variant="dark" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
+                        <i className="fa-solid fa-circle-down"></i>
+                    </Button>
+                </OverlayTrigger>
             </div>
         </div>
     );

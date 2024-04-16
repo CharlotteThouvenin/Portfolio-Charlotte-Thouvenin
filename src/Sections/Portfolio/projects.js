@@ -8,7 +8,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
-            skills: { name: "React", icon: "fa-brands fa-react" }
+            skills: [{ name: "React", icon: "fa-brands fa-react" }]
         },
         {
             id: 2,
@@ -18,7 +18,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
-            skills: { name: "JavaScript", icon: "fa-brands fa-js" }
+            skills: [{ name: "JavaScript", icon: "fa-brands fa-js" }]
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
-            skills: { name: "Sass", icon: "fa-brands fa-sass" }
+            skills: [{ name: "Sass", icon: "fa-brands fa-sass" }]
         },
         {
             id: 4,
@@ -38,7 +38,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
-            skills: { name: "SOE" }
+            skills: [{ name: "SOE", icon: "fa-solid fa-globe" }]
         },
         {
             id: 5,
@@ -60,6 +60,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
+            skills: [{ name: "React", icon: "fa-brands fa-react" }]
         },
         {
             id: 2,
@@ -69,6 +70,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
+            skills: [{ name: "JavaScript", icon: "fa-brands fa-js" }],
         },
         {
             id: 3,
@@ -78,6 +80,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
+            skills: [{ name: "Sass", icon: "fa-brands fa-sass" }],
         },
         {
             id: 4,

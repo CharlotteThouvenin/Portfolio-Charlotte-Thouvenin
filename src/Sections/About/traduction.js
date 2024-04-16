@@ -1,8 +1,8 @@
 const traduction = {
     en: {
         aboutMeTitle: "About me",
-        aboutMeDescription: "After 10 years in retail, I decided to move into web development.",
-        aboutMeText: "I've always loved building things, learning new techniques, solving problems and admiring the results.",
+        aboutMeDescription: "After 10 years' experience in retail, I'm now starting a new career in web development.",
+        aboutMeText: "My time at OpenClassRoom gave me a solid grounding in various languages, but above all in programming logic. Since then, I've been continuing my training in web technologies.",
         timeLineTitle: "My background",
         timeLineDate1: "November 2023 - April 2024",
         timeLineTitle1: "Web Integration Training",
@@ -19,8 +19,8 @@ const traduction = {
     },
     fr: {
         aboutMeTitle: "A propos",
-        aboutMeDescription: "Après 10 ans en grande distribution, j'ai décidé de me reconvertir dans le developpement web.",
-        aboutMeText: "J'ai toujours aimé construire des choses, apprendre de nouvelles techniques, résoudre des problèmes et admirer le résultat.",
+        aboutMeDescription: "Après 10 ans d'expérience dans le secteur de la grande distribution, j’entame aujourd’hui une nouvelle carrière en développement web.",
+        aboutMeText: " Mon parcours chez OpenClassRoom m’a permis d’acquérir de solides bases dans différents langages, mais surtout en logique de programmation. Je me forme en continue sur les technologies web depuis.",
         timeLineTitle: "Mon parcours",
         timeLineDate1: "Novembre 2023 - Avril 2024",
         timeLineTitle1: "Formation Intégrateur Web",

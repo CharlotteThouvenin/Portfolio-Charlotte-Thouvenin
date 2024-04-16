@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Offcanvas } from 'react-bootstrap';
 import SwitchLang from '../../Components/SwitchLang/SwitchLang';
-import { UpButton } from '../../Components/Return';
 import traduction from "./traduction";
 import { LanguageContext } from "../../contextLang";
 
@@ -34,7 +33,7 @@ function Header() {
 
     return isVisible && (
         <div className={`header ${isVisible ? 'visible' : ''}`}>
-            <Navbar fixed="bottom" expand="md" className="bg-body-tertiary">
+            <Navbar fixed="top" expand="md" className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="#home" className='d-none d-md-block'>Charlotte Thouvenin</Navbar.Brand>
 
@@ -59,7 +58,6 @@ function Header() {
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                     <SwitchLang />
-                    <UpButton />
 
                 </Container>
             </Navbar>

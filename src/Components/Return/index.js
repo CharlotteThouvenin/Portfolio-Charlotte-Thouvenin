@@ -13,7 +13,7 @@ export const UpButton = () => {
 
     return (
         (
-            <button className='btn btn-dark up-button' onClick={scrollToTop}>
+            <button className='btn btn-dark' onClick={scrollToTop}>
                 <i className="fa-solid fa-circle-up"></i>
             </button>
         )

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
+
 import traduction from "./traduction"
 import { useContext } from "react"
 import { LanguageContext } from "../../contextLang"
-
+import { Button } from "react-bootstrap";
 import { useParallax } from "react-scroll-parallax";
 
 function ContactForm() {
@@ -13,74 +12,31 @@ function ContactForm() {
         easing: [0, 1.37, 1, .93]
     });
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
 
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // sendig data here
-        alert('Form submitted');
-        console.log(formData);
-    };
 
     const { language } = useContext(LanguageContext)
 
     return (
-        <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id='contact'>
-            <h2>{traduction[language].title}</h2>
-            <Container style={{ maxWidth: '600px' }}>
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Label>{traduction[language].name}</Form.Label>
-                        <Form.Control
-                            type="text"
-                            name="name"
-                            placeholder={traduction[language].nameInput}
-                            value={formData.name}
-                            onChange={handleChange}
-                            required />
-                    </Form.Group>
+        <dix>
+            <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id='contact'>
+                <h2>{traduction[language].title}</h2>
+                <Button className="m-4 fs-5" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
+                    <i className="fa-brands fa-linkedin"></i>
+                </Button>
+                <Button className="m-4 fs-5" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
+                    <i className="fa-solid fa-envelope"></i>
+                </Button>
+                <Button className="m-4 fs-5" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
+                    <i className="fa-solid fa-phone"></i>
+                </Button>
+                <Button className="m-4 fs-5" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
+                    <i className="fa-brands fa-whatsapp"></i>
+                </Button>
+            </div>
 
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>{traduction[language].mail}</Form.Label>
-                        <Form.Control
-                            type="email"
-                            name="email"
-                            placeholder={traduction[language].mailInput}
-                            value={formData.email}
-                            onChange={handleChange}
-                            required />
-                    </Form.Group>
+        </dix>
 
-                    <Form.Group className="mb-3" controlId="formBasicMessage">
-                        <Form.Label>{traduction[language].message}</Form.Label>
-                        <Form.Control
-                            as="textarea"
-                            rows={3}
-                            name="message"
-                            placeholder={traduction[language].messageInput}
-                            value={formData.message}
-                            onChange={handleChange}
-                            required />
-                    </Form.Group>
 
-                    <Button variant="secondary" type="submit">
-                        {traduction[language].button}
-                    </Button>
-                </Form>
-            </Container>
-        </div>
 
     );
 }

@@ -1,12 +1,13 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { LanguageContext } from "../../contextLang";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { workData } from "../../Datas/projects"
+import { workData } from "./projects"
 import WorkCard from "../../Components/Card";
 import Slider from "react-slick";
 import traduction from "./traduction"
 import { useParallax } from "react-scroll-parallax";
+import WorkModal from "../../Components/Modal";
 
 export const Portfolio = () => {
 
@@ -27,6 +28,8 @@ export const Portfolio = () => {
         sliderRef.current.slickPrev();
     };
 
+
+
     const settings = {
         dots: true,
         infinite: true,
@@ -34,6 +37,7 @@ export const Portfolio = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -63,10 +67,23 @@ export const Portfolio = () => {
     }
         ;
 
+    const [modalVisible, setModalVisible] = useState(false);
+    const [selectedItemId, setSelectedItemId] = useState(null);
+
+    const handleCardClick = (itemId) => {
+        setSelectedItemId(itemId);
+        setModalVisible(true);
+    };
+
+    const closeModal = () => {
+        setModalVisible(false);
+        setSelectedItemId(null);
+    };
+
     return (
         <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="portfolio">
             <h2>{traduction[language].title}</h2>
-            <div className="">
+            <div>
                 <div className="d-flex justify-content-between p-4">
                     <button className="btn btn-secondary" onClick={previous}>
                         {traduction[language].previous}
@@ -75,16 +92,17 @@ export const Portfolio = () => {
                         {traduction[language].next}
                     </button>
                 </div>
-                <div className="slider-container">
+                <div className="slider-container w-100">
                     <Slider ref={sliderRef} {...settings}>
-                        {workData[language].map((item, index) => (
-                            <div key={item.id}>
+                        {workData[language].map((item) => (
+                            <div key={item.id} onClick={() => handleCardClick(item.id)}>
                                 <WorkCard title={item.title} image={item.img} description={item.description} />
                             </div>
                         ))}
                     </Slider>
                 </div>
             </div>
+            {modalVisible && <WorkModal itemId={selectedItemId} onClose={closeModal} workData={workData[language]} />}
         </div>
     );
 };
