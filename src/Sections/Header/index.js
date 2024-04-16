@@ -8,6 +8,7 @@ import { UpButton } from '../../Components/Return';
 import traduction from "./traduction";
 import { LanguageContext } from "../../contextLang";
 
+
 function Header() {
     const { language } = useContext(LanguageContext);
     const [isVisible, setIsVisible] = useState(false);
@@ -59,6 +60,7 @@ function Header() {
                     </Navbar.Offcanvas>
                     <SwitchLang />
                     <UpButton />
+
                 </Container>
             </Navbar>
         </div>

@@ -7,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 
 import "./style.scss"
 
+
+
 export default function Welcome() {
     const { language } = useContext(LanguageContext);
 
@@ -33,6 +35,17 @@ export default function Welcome() {
                 <div className="mt-5">
                     <div className="welcome-text w-50 mx-auto text-center bg-dark p-2 rounded">{traduction[language].bannerText}</div>
                 </div>
+            </div>
+            <div>
+                <Button>
+                    <i className="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                </Button>
+                <Button>
+                    <i class="fa-brands fa-square-github"></i><span>GitHub</span>
+                </Button>
+                <Button className="me-2" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
+                    <i class="fa-solid fa-circle-down"></i><span>CV</span>
+                </Button>
             </div>
 
             <div className="d-flex justify-content-center align-items-center pb-5">
