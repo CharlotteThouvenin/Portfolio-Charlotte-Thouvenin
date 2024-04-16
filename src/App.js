@@ -8,29 +8,30 @@ import ContactForm from './Sections/Contact';
 import Header from './Sections/Header';
 import { Footer } from './Sections/Footer';
 
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
     <LanguageContextProvider>
 
+      <ParallaxProvider>
+        <div className="App">
+          <Welcome />
+          <div className='bg-dark'>
+            <Header />
 
-      <div className="App">
-        <Welcome />
-        <div className='bg-dark'>
-          <Header />
-
-          <div className='container py-4'>
-            <Portfolio />
-            <Skills />
-            <About />
-            <ContactForm />
+            <div className='container py-4'>
+              <Portfolio />
+              <Skills />
+              <About />
+              <ContactForm />
+            </div>
           </div>
+          <Footer />
+
+
         </div>
-        <Footer />
-
-
-      </div>
-
+      </ParallaxProvider>
     </LanguageContextProvider>
 
   );

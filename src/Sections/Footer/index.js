@@ -2,7 +2,7 @@ import './style.scss'
 
 export const Footer = () => {
     return (
-        <div className="bg-dark text-center footer">
+        <div className="d-flex flex-column text-center footer justify-content-center">
             <p> Copyright © 2024 Charlotte Thouvenin</p>
         </div>
     )

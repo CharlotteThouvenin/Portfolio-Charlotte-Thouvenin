@@ -20,7 +20,7 @@ export default function Welcome() {
     }, []);
 
     return (
-        <div className="banner vh-100 d-flex flex-column justify-content-around align-items-center">
+        <div className="banner vh-100 d-flex flex-column justify-content-around align-items-center" id="home">
 
             <div className="d-flex flex-column justify-content-between align-items-center flex-wrap mt-5">
 

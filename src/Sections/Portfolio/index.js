@@ -6,8 +6,16 @@ import { workData } from "../../Datas/projects"
 import WorkCard from "../../Components/Card";
 import Slider from "react-slick";
 import traduction from "./traduction"
+import { useParallax } from "react-scroll-parallax";
 
 export const Portfolio = () => {
+
+    const parallax = useParallax({
+        translateX: ['-100px', '0px'],
+        opacity: [0, 1],
+        easing: [0, 1.37, 1, .93]
+    });
+
     const { language } = useContext(LanguageContext);
     const sliderRef = useRef(null);
 
@@ -56,7 +64,7 @@ export const Portfolio = () => {
         ;
 
     return (
-        <div className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="portfolio">
+        <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="portfolio">
             <h2>{traduction[language].title}</h2>
             <div className="">
                 <div className="d-flex justify-content-between p-4">

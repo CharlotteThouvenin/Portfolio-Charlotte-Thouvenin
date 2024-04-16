@@ -1,20 +1,19 @@
 import React from 'react';
 import ButtonExample from "../../Components/SkillsBadges";
+import skillData from './traduction';
+import { useParallax } from "react-scroll-parallax";
 
 export const Skills = () => {
-    const skillData = [
-        { name: "HTML", icon: "fa-brands fa-html5 " },
-        { name: "CSS", icon: "fa-brands fa-css3-alt" },
-        { name: "JavaScript", icon: "fa-brands fa-js" },
-        { name: "React", icon: "fa-brands fa-react" },
-        { name: "Sass", icon: "fa-brands fa-sass" },
-        { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },
-        { name: "Git & GitHub", icon: "fa-brands fa-github" },
-    ];
+
+    const parallax = useParallax({
+        translateX: ['-100px', '0px'],
+        opacity: [0, 1],
+        easing: [0, 1.37, 1, .93]
+    });
 
     return (
-        <div className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="skills">
-            <h2 >Compétences</h2>
+        <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="skills">
+            <h2>Compétences</h2>
             <div className="skills-container d-flex justify-content-around flex-wrap">
                 {skillData.map((item, index) => (
                     <div className="skill-item" key={index}>

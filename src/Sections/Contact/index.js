@@ -4,7 +4,15 @@ import traduction from "./traduction"
 import { useContext } from "react"
 import { LanguageContext } from "../../contextLang"
 
+import { useParallax } from "react-scroll-parallax";
+
 function ContactForm() {
+    const parallax = useParallax({
+        translateX: ['-100px', '0px'],
+        opacity: [0, 1],
+        easing: [0, 1.37, 1, .93]
+    });
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -29,7 +37,7 @@ function ContactForm() {
     const { language } = useContext(LanguageContext)
 
     return (
-        <div className="shadow-sm px-3 py-2 mb-5 bg-body rounded">
+        <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id='contact'>
             <h2>{traduction[language].title}</h2>
             <Container style={{ maxWidth: '600px' }}>
                 <Form onSubmit={handleSubmit}>
