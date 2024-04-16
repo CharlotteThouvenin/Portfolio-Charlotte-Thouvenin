@@ -13,10 +13,10 @@ export default function Welcome() {
     useEffect(() => {
         const tl = gsap.timeline();
         tl
-            .fromTo(".welcome-title", { opacity: 0, x: -1000 }, { opacity: 1, x: 0, fontSize: "50px", duration: 0.5 }, "start")
-            .fromTo(".welcome-subtitle", { opacity: 0, x: 1000 }, { opacity: 1, x: 0, duration: 0.5 }, "start+=0.5")
-            .fromTo(".welcome-text", { opacity: 0 }, { opacity: 1, duration: 0.5 }, "start+=1")
-            .fromTo(".button", { y: -1000 }, { y: 0, duration: 0.5 }, "start+=1.5")
+            .fromTo(".welcome-title", { opacity: 0, x: -500 }, { opacity: 1, x: 0, fontSize: "50px", duration: 0.5 }, "start")
+            .fromTo(".welcome-subtitle", { opacity: 0, x: 500 }, { opacity: 1, x: 0, duration: 0.5 }, "start")
+            .fromTo(".welcome-text", { opacity: 0 }, { opacity: 1, duration: 0.5 }, "start")
+            .fromTo(".button", { y: -500, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5 }, "start")
     }, []);
 
     return (
