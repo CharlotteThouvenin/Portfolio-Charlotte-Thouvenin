@@ -81,7 +81,7 @@ export const Portfolio = () => {
     };
 
     return (
-        <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="portfolio">
+        <div ref={parallax.ref} className="shadow-sm px-3 py-4 mb-5 bg-body rounded" id="portfolio">
             <h2>{traduction[language].title}</h2>
             <div>
                 <div className="d-flex justify-content-between p-4">

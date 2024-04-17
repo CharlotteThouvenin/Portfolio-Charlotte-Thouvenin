@@ -8,10 +8,10 @@ function Background() {
     const { language } = useContext(LanguageContext)
 
     return (
-        <Accordion defaultActiveKey={['0']} alwaysOpen className='w-75 align-self-center'>
+        <Accordion defaultActiveKey={['0']} alwaysOpen className='w-75'>
             {traduction[language].map((item, index) => (
                 <div key={index}>
-                    <Accordion.Item eventKey={index}>
+                    <Accordion.Item eventKey={index} className='m-2'>
                         <Accordion.Header className=''>{item.date}<br /> {item.title}</Accordion.Header>
                         <Accordion.Body>
                             <span></span>

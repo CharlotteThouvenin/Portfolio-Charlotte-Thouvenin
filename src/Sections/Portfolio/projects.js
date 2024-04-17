@@ -4,7 +4,7 @@ export const workData = {
             id: 1,
             img: './Bank1.png',
             title: 'Argent Bank',
-            description: "Développement d'un site de banque en ligne avec React et Redux",
+            description: "Développement à partir d'une maquette HTML d'un site de banque en ligne avec React et Redux",
             url: "",
             gitHub: "",
             images: [],
@@ -22,12 +22,12 @@ export const workData = {
         },
         {
             id: 3,
-            img: './Ohmyfood1.jpg',
+            img: 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/ohmyfood/Ohmyfood1.jpg',
             title: 'Oh my food',
             description: "Travailler sur l'UX d'un site de réservation de restaurants avec des animations et Sass",
-            url: "",
-            gitHub: "",
-            images: [],
+            url: "https://charlottethouvenin.github.io/Projet-4-OC/",
+            gitHub: "https://github.com/CharlotteThouvenin/Projet-4-OC.git",
+            images: ['https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/ohmyfood/photo1.webp', 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/ohmyfood/photo2.webp', 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/ohmyfood/photo3.webp', 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/ohmyfood/photo5.webp'],
             skills: [{ name: "Sass", icon: "fa-brands fa-sass" }]
         },
         {
@@ -35,8 +35,8 @@ export const workData = {
             img: './Nina.png',
             title: 'Nina Carducci',
             description: "Travail sur les performances et le référencement naturel d'un site de photographe",
-            url: "",
-            gitHub: "",
+            url: "https://charlottethouvenin.github.io/Projet-9-OC-Nina-Carducci/",
+            gitHub: "https://github.com/CharlotteThouvenin/Projet-9-OC-Nina-Carducci.git",
             images: [],
             skills: [{ name: "SOE", icon: "fa-solid fa-globe" }]
         },
@@ -77,9 +77,9 @@ export const workData = {
             img: './Ohmyfood1.jpg',
             title: 'Oh my food',
             description: "Work on the UX of a restaurant reservation site with animations and Sass",
-            url: "",
-            gitHub: "",
-            images: [],
+            url: "https://charlottethouvenin.github.io/Projet-4-OC/",
+            gitHub: "https://github.com/CharlotteThouvenin/Projet-4-OC.git",
+            images: ['./images/ohmyfood/photo1.webp', './images/ohmyfood/photo2.webp', './images/ohmyfood/photo3.webp', './images/ohmyfood/photo4.webp', './images/ohmyfood/photo5.webp'],
             skills: [{ name: "Sass", icon: "fa-brands fa-sass" }],
         },
         {
@@ -87,9 +87,10 @@ export const workData = {
             img: './Nina.png',
             title: 'Nina Carducci',
             description: "Work on the performance and natural referencing of a photographer's website",
-            url: "",
-            gitHub: "",
+            url: "https://charlottethouvenin.github.io/Projet-9-OC-Nina-Carducci/",
+            gitHub: "https://github.com/CharlotteThouvenin/Projet-9-OC-Nina-Carducci.git",
             images: [],
+            skills: [{ name: "SOE", icon: "fa-solid fa-globe" }]
         },
         {
             id: 5,
@@ -99,6 +100,7 @@ export const workData = {
             url: "",
             gitHub: "",
             images: [],
+            skills: [{ name: "React", icon: "fa-brands fa-react" }, { name: "Sass", icon: "fa-brands fa-sass" }]
         }
     ],
 };

@@ -1,12 +1,21 @@
+const traduction = {
+    en: {
+        title: "Skills",
+        subtitle1: "Technical skills",
+        subtitle2: "Professional skills",
+        pro: ["Intégrer une interface responsive", "Débugger un site avec des test", "Créer et améliorer le SEO", "Effectuer des call API", "Green Code et amélioration des performances"],
+        subtitle3: "Soft skills",
+        soft: ["Travaille en équipe", "Calme et réfléchie", "Pugnace", "Autonome", "Communication claire et aisée"]
+    },
+    fr: {
+        title: "Compétences",
+        subtitle1: "Compétences techniques",
+        subtitle2: "Compétences métier",
+        pro: ["Intégrer une interface utilisateur responsive", "Débugger un site avec des tests", "Créer et améliorer le référencement d'un site", "Effectuer des call API", "Green Code et amélioration des performances"],
+        subtitle3: "Savoir-être",
+        soft: ["Travaille en équipe", "Calme et réfléchie", "Pugnace", "Autonome", "Communication claire et aisée"]
 
-const skillData = [
-    { name: "HTML", icon: "fa-brands fa-html5 " },
-    { name: "CSS", icon: "fa-brands fa-css3-alt" },
-    { name: "JavaScript", icon: "fa-brands fa-js" },
-    { name: "React", icon: "fa-brands fa-react" },
-    { name: "Sass", icon: "fa-brands fa-sass" },
-    { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },
-    { name: "Git & GitHub", icon: "fa-brands fa-github" },
-];
+    }
+}
 
-export default skillData;
+export default traduction

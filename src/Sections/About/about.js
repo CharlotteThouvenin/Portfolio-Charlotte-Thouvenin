@@ -12,7 +12,7 @@ export const About = () => {
         easing: [0, 1.37, 1, .93]
     });
     return (
-        <div ref={parallax.ref} className="shadow-sm px-3 py-2 mb-5 bg-body rounded" id="about">
+        <div ref={parallax.ref} className="shadow-sm px-3 py-4 mb-5 bg-body rounded" id="about">
             <div className="row">
                 <h2>{traduction[language].aboutMeTitle}</h2>
                 <div className="col-md-6 p-4 col-12">
