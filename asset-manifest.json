@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-Charlotte-Thouvenin/static/css/main.0c187618.css",
-    "main.js": "/Portfolio-Charlotte-Thouvenin/static/js/main.cce21a97.js",
-    "static/js/453.cfd59cba.chunk.js": "/Portfolio-Charlotte-Thouvenin/static/js/453.cfd59cba.chunk.js",
+    "main.js": "/Portfolio-Charlotte-Thouvenin/static/js/main.a58461b5.js",
+    "static/js/453.2a82e7ac.chunk.js": "/Portfolio-Charlotte-Thouvenin/static/js/453.2a82e7ac.chunk.js",
     "static/media/banner3.jpg": "/Portfolio-Charlotte-Thouvenin/static/media/banner3.0406a0e65150e725ffc9.jpg",
     "static/media/slick.svg": "/Portfolio-Charlotte-Thouvenin/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Portfolio-Charlotte-Thouvenin/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -10,11 +10,11 @@
     "index.html": "/Portfolio-Charlotte-Thouvenin/index.html",
     "static/media/slick.woff": "/Portfolio-Charlotte-Thouvenin/static/media/slick.295183786cd8a1389865.woff",
     "main.0c187618.css.map": "/Portfolio-Charlotte-Thouvenin/static/css/main.0c187618.css.map",
-    "main.cce21a97.js.map": "/Portfolio-Charlotte-Thouvenin/static/js/main.cce21a97.js.map",
-    "453.cfd59cba.chunk.js.map": "/Portfolio-Charlotte-Thouvenin/static/js/453.cfd59cba.chunk.js.map"
+    "main.a58461b5.js.map": "/Portfolio-Charlotte-Thouvenin/static/js/main.a58461b5.js.map",
+    "453.2a82e7ac.chunk.js.map": "/Portfolio-Charlotte-Thouvenin/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c187618.css",
-    "static/js/main.cce21a97.js"
+    "static/js/main.a58461b5.js"
   ]
 }
