@@ -19,7 +19,7 @@ import { LanguageContext } from "../../contextLang"
 export default function AboutTimeline() {
     const { language } = useContext(LanguageContext)
     return (
-        <Timeline position="alternate">
+        <Timeline position="alternate" className='fs-6 fs-md-5'>
             <TimelineItem>
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
@@ -37,10 +37,10 @@ export default function AboutTimeline() {
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                    <Typography variant="h6" component="span" className='fs-6 fs-md-5'>
                         {traduction[language].timeLineTitle1}
                     </Typography>
-                    <Typography>{traduction[language].timeLineSubtitle1}</Typography>
+                    <Typography className='fs-6 fs-md-5'>{traduction[language].timeLineSubtitle1}</Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -48,6 +48,7 @@ export default function AboutTimeline() {
                     sx={{ m: 'auto 0' }}
                     variant="body2"
                     color="text.secondary"
+                    className='fs-6 fs-md-5'
                 >
                     {traduction[language].timeLineDate2}
                 </TimelineOppositeContent>
@@ -59,10 +60,10 @@ export default function AboutTimeline() {
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                    <Typography className='fs-6 fs-md-5' variant="h6" component="span">
                         {traduction[language].timeLineTitle2}
                     </Typography>
-                    <Typography>{traduction[language].timeLineSubtitle2}</Typography>
+                    <Typography className='fs-6 fs-md-5'>{traduction[language].timeLineSubtitle2}</Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -70,6 +71,7 @@ export default function AboutTimeline() {
                     sx={{ m: 'auto 0' }}
                     variant="body2"
                     color="text.secondary"
+                    className='fs-6 fs-md-5'
                 >
                     {traduction[language].timeLineDate3}
                 </TimelineOppositeContent>
@@ -81,10 +83,10 @@ export default function AboutTimeline() {
                     <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                    <Typography variant="h6" component="span" className='fs-6 fs-md-5'>
                         {traduction[language].timeLineTitle3}
                     </Typography>
-                    <Typography>{traduction[language].timeLineSubtitle3}</Typography>
+                    <Typography className='fs-6 fs-md-5'>{traduction[language].timeLineSubtitle3}</Typography>
                 </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -92,6 +94,7 @@ export default function AboutTimeline() {
                     sx={{ m: 'auto 0' }}
                     variant="body2"
                     color="text.secondary"
+                    className='fs-6 fs-md-5'
                 >
                     {traduction[language].timeLineDate4}
                 </TimelineOppositeContent>
@@ -104,10 +107,10 @@ export default function AboutTimeline() {
                     <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                    <Typography variant="h6" component="span">
+                    <Typography variant="h6" component="span" className='fs-6 fs-md-5'>
                         {traduction[language].timeLineTitle4}
                     </Typography>
-                    <Typography>{traduction[language].timeLineSubtitle4}</Typography>
+                    <Typography className='fs-6 fs-md-5'>{traduction[language].timeLineSubtitle4}</Typography>
                 </TimelineContent>
             </TimelineItem>
         </Timeline>

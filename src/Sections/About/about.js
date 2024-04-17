@@ -1,8 +1,8 @@
 import traduction from "./traduction"
 import { useContext } from "react"
 import { LanguageContext } from "../../contextLang"
-import AboutTimeline from "../../Components/TimeLine"
 import { useParallax } from "react-scroll-parallax";
+import Background from "../../Components/Collapse";
 
 export const About = () => {
     const { language } = useContext(LanguageContext)
@@ -20,9 +20,8 @@ export const About = () => {
                     <p>{traduction[language].aboutMeDescription}</p>
                     <p>{traduction[language].aboutMeText}</p>
                 </div>
-                <div className="col-md-6 col-12">
-                    <h3 className="text-center">{traduction[language].timeLineTitle}</h3>
-                    <AboutTimeline />
+                <div className="col-md-6 col-12 d-flex flex-row justify-content-center">
+                    <Background />
                 </div>
             </div>
 

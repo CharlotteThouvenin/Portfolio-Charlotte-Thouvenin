@@ -26,7 +26,7 @@ export default function Welcome() {
 
             <div className="d-flex flex-column justify-content-between align-items-center flex-wrap mt-5">
 
-                <h1 className="welcome-title p-2 rounded">{traduction[language].bannerTitle2}</h1>
+                <h1 className="welcome-title p-2 rounded text-center">{traduction[language].bannerTitle2}</h1>
                 <h2 className="welcome-subtitle p-2 rounded m-4">
                     {traduction[language].bannerSubtitle}
                 </h2>
