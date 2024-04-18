@@ -26,7 +26,7 @@ export default function Welcome() {
 
             <div className="d-flex flex-column justify-content-between align-items-center flex-wrap mt-5">
 
-                <h1 className="welcome-title p-2 rounded text-center">{traduction[language].bannerTitle2}</h1>
+                <h1 className="welcome-title p-2 rounded text-center">Charlotte Thouvenin</h1>
                 <h2 className="welcome-subtitle p-2 rounded m-4">
                     {traduction[language].bannerSubtitle}
                 </h2>
@@ -35,19 +35,19 @@ export default function Welcome() {
             <div className="d-flex flex-row justify-content-center pt-5 flex-wrap">
 
 
-                <Button className="m-4 fs-6" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
+                <Button className="m-4 fs-6" variant="light" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
                     <i className="fa-brands fa-linkedin"></i>
-                    <span className="ps-2">{traduction[language].LinkedIn}</span>
+                    <span className="ps-2">LinkedIn</span>
                 </Button>
 
 
 
-                <Button className="m-4 fs-6" variant="dark" href="https://github.com/CharlotteThouvenin" target="blank" >
+                <Button className="m-4 fs-6" variant="light" href="https://github.com/CharlotteThouvenin" target="blank" >
                     <i className="fa-brands fa-square-github"></i>
-                    <span className="ps-2">{traduction[language].Git}</span>
+                    <span className="ps-2">GitHub</span>
                 </Button>
 
-                <Button className="m-4 fs-6" variant="dark" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
+                <Button className="m-4 fs-6" variant="light" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
                     <i className="fa-solid fa-circle-down"></i>
                     <span className="ps-2">{traduction[language].Download}</span>
                 </Button>

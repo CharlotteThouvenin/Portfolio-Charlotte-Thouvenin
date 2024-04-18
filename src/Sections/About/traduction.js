@@ -7,7 +7,7 @@ const traduction = {
     fr: {
         aboutMeTitle: "A propos",
         aboutMeDescription: "Après 10 ans d'expérience dans le secteur de la grande distribution, j’entame aujourd’hui une nouvelle carrière en développement web.",
-        aboutMeText: " Mon parcours chez OpenClassRoom m’a permis d’acquérir de solides bases dans différents langages, mais surtout en logique de programmation. Je me forme en continue sur les technologies web depuis.",
+        aboutMeText: " Mon parcours chez OpenClassRoom m’a permis d’acquérir de solides bases dans différents langages, mais surtout en logique de programmation. Je me forme en continu sur les technologies web.",
     }
 }
 
