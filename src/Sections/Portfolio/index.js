@@ -31,7 +31,7 @@ export const Portfolio = () => {
 
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -96,7 +96,7 @@ export const Portfolio = () => {
                     <Slider ref={sliderRef} {...settings}>
                         {workData[language].map((item) => (
                             <div key={item.id} onClick={() => handleCardClick(item.id)}>
-                                <WorkCard title={item.title} image={item.img} description={item.description} />
+                                <WorkCard title={item.title} image={item.img} description={item.description} details={traduction[language].details} />
                             </div>
                         ))}
                     </Slider>

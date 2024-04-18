@@ -27,7 +27,7 @@ const WorkModal = ({ itemId, onClose, workData }) => {
                         {item && item.skills && item.skills.length > 0 && (
                             item.skills.map((skill, index) => (
                                 <div className="skill-item" key={index}>
-                                    <Button variant="secondary m-2" className='p-1 ms-5'>
+                                    <Button variant="secondary m-2" className='ms-5' disabled>
                                         <i className={skill.icon || 'fa fa-question-circle'}></i>  {skill.name}
                                     </Button>
                                 </div>

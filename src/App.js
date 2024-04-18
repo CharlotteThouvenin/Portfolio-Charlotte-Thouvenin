@@ -9,6 +9,7 @@ import Header from './Sections/Header';
 import { Footer } from './Sections/Footer';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { UpButton } from './Components/Return';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <ParallaxProvider>
 
         <div className="App">
+          <UpButton />
           <Welcome />
           <Header />
 

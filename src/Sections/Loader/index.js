@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import { LanguageContext } from "../../contextLang";
 import traduction from "./traduction";
 import Button from 'react-bootstrap/Button';
-import { OverlayTrigger, Tooltip } from 'react-bootstrap';
+
 
 import "./style.scss"
 
@@ -32,43 +32,26 @@ export default function Welcome() {
                 </h2>
 
             </div>
-            <div className="d-flex flex-row justify-content-center pt-5">
-                <OverlayTrigger
-                    placement="bottom"
-                    overlay={
-                        <Tooltip id="tooltip-right">
-                            {traduction[language].tooltipLinkedIn}
-                        </Tooltip>
-                    }
-                >
-                    <Button className="m-4 fs-5" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
-                        <i className="fa-brands fa-linkedin"></i>
-                    </Button>
-                </OverlayTrigger>
-                <OverlayTrigger
-                    placement="bottom"
-                    overlay={
-                        <Tooltip id="tooltip-right">
-                            {traduction[language].tooltipGit}
-                        </Tooltip>
-                    }
-                >
-                    <Button className="m-4 fs-5" variant="dark" href="https://github.com/CharlotteThouvenin" target="blank" >
-                        <i className="fa-brands fa-square-github"></i>
-                    </Button>
-                </OverlayTrigger>
-                <OverlayTrigger
-                    placement="bottom"
-                    overlay={
-                        <Tooltip id="tooltip-right">
-                            {traduction[language].tooltipDownload}
-                        </Tooltip>
-                    }
-                >
-                    <Button className="m-4 fs-5" variant="dark" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
-                        <i className="fa-solid fa-circle-down"></i>
-                    </Button>
-                </OverlayTrigger>
+            <div className="d-flex flex-row justify-content-center pt-5 flex-wrap">
+
+
+                <Button className="m-4 fs-6" variant="dark" href="https://www.linkedin.com/in/charlotte-thouvenin-98399127/" target="blank" >
+                    <i className="fa-brands fa-linkedin"></i>
+                    <span className="ps-2">{traduction[language].LinkedIn}</span>
+                </Button>
+
+
+
+                <Button className="m-4 fs-6" variant="dark" href="https://github.com/CharlotteThouvenin" target="blank" >
+                    <i className="fa-brands fa-square-github"></i>
+                    <span className="ps-2">{traduction[language].Git}</span>
+                </Button>
+
+                <Button className="m-4 fs-6" variant="dark" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
+                    <i className="fa-solid fa-circle-down"></i>
+                    <span className="ps-2">{traduction[language].Download}</span>
+                </Button>
+
             </div>
         </div>
     );

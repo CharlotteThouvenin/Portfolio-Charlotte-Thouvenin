@@ -28,26 +28,26 @@ const traduction = {
         {
             title: "Formation Intégrateur Web",
             date: "2024",
-            place: "OpenClassRooms",
-            description: ""
+            place: "OPENCLASSROOMS",
+            description: "Formation en développement web front end. Parcours sous forme de 12 projets professionnels mettant en pratique les connaissances techniques apprise en ligne."
         },
         {
             title: "Auto-entrepreneur",
             date: "2023",
             place: "Immobilier",
-            description: ""
+            description: "Mandataire immobilier indépendant"
         },
         {
             title: "Marketing et Achat",
             date: "2012 - 2022",
             place: "Grande distribution",
-            description: ""
+            description: "Plusieurs postes en Marketing de l'offre dans un premier temps, puis en achat."
         },
         {
             title: "Master en Management",
             date: "2012",
             place: "Ecole de commerce",
-            description: ""
+            description: "Formation généraliste en marketing, finance, RH et management."
         },
     ]
 }

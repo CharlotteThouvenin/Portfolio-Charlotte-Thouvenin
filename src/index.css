@@ -50,8 +50,13 @@
 
 body {
   background: var(--background);
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   color: var(--primary)
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .banner {

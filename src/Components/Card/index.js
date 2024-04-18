@@ -1,9 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './style.scss'
 
 
-
-function WorkCard({ title, image, description, onClick }) {
+function WorkCard({ title, image, onClick, details }) {
 
 
     return (
@@ -14,8 +14,7 @@ function WorkCard({ title, image, description, onClick }) {
                 <Card.Title className='p-2 card-title'>{title}</Card.Title>
                 <Card.Img variant="top" src={image} className='object-fit-cover' />
                 <Card.Body>
-
-                    <Button onClick={onClick} variant="secondary">En savoir plus</Button>
+                    <Button onClick={onClick} variant="secondary">{details}</Button>
                 </Card.Body>
             </Card>
         </div>
