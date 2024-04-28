@@ -29,7 +29,7 @@ const traduction = {
             title: "Formation Intégrateur Web",
             date: "2024",
             place: "OPENCLASSROOMS",
-            description: "Formation en développement web front end. Parcours sous forme de 12 projets professionnels mettant en pratique les connaissances techniques apprise en ligne."
+            description: "Formation en développement web front end. Parcours sous forme de 11 situations professionnels couvrant les domaines suivant: développement de site, déboggage, gestion de projets et référencement naturel."
         },
         {
             title: "Auto-entrepreneur",
