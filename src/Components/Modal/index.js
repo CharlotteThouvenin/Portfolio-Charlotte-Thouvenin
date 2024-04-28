@@ -42,12 +42,12 @@ const WorkModal = ({ itemId, onClose, workData }) => {
                         {item.images && item.images.length > 0 ? (
                             item.images.map((img, index) => (
                                 <div key={index}>
-                                    <img src={img} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
+                                    <img src={img} alt={`Slide ${index + 1}`} style={{ width: '100%' }} loading='lazy' />
                                 </div>
                             ))
                         ) : (
                             <div>
-                                <img src={item.img} alt={item.title} style={{ width: '100%' }} />
+                                <img src={item.img} alt={item.title} style={{ width: '100%' }} loading='lazy' />
                             </div>
                         )}
                     </Slider>
