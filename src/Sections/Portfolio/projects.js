@@ -1,6 +1,15 @@
 export const workData = {
     fr: [
         {
+            id: 0,
+            img: 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/mignature.png',
+            title: 'Portfolio',
+            description: "Mon portfolio en ligne. J'ai utlisé plusieurs librairies pour ce site, notamment react-slick et react-scroll-parallax.",
+            url: "https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin",
+            gitHub: "https://github.com/CharlotteThouvenin/Portfolio-Charlotte-Thouvenin.git",
+            skills: [{ name: "React", icon: "fa-brands fa-react" }, { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },]
+        },
+        {
             id: 1,
             img: 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/Bank/Bank1.png',
             title: 'Argent Bank',
@@ -53,6 +62,15 @@ export const workData = {
     ],
 
     en: [
+        {
+            id: 0,
+            img: 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/mignature.png',
+            title: 'Portfolio',
+            description: "My portfolio website. I've used several libraries for this project, including react-slick and react-scroll-parallax.",
+            url: "https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin",
+            gitHub: "https://github.com/CharlotteThouvenin/Portfolio-Charlotte-Thouvenin.git",
+            skills: [{ name: "React", icon: "fa-brands fa-react" }, { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },]
+        },
         {
             id: 1,
             img: 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/Bank/Bank1.png',
