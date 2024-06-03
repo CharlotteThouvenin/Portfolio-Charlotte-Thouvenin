@@ -12,7 +12,7 @@ function WorkCard({ title, image, onClick, details }) {
 
             <Card className='card border m-2'>
                 <Card.Title className='p-2 card-title'>{title}</Card.Title>
-                <Card.Img variant="top" src={image} className='object-fit-cover' loading='lazy' />
+                <Card.Img variant="top" src={image} className='object-fit-cover' loading='lazy' alt={title} />
                 <Card.Body>
                     <Button onClick={onClick} variant="secondary">{details}</Button>
                 </Card.Body>

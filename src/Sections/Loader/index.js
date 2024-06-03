@@ -47,7 +47,7 @@ export default function Welcome() {
                     <span className="ps-2">GitHub</span>
                 </Button>
 
-                <Button className="m-4 fs-6" variant="light" href="./Charlotte_Thouvenin_CV.pdf" download="Charlotte_Thouvenin_CV.pdf">
+                <Button className="m-4 fs-6" variant="light" href={traduction[language].File} download={traduction[language].File}>
                     <i className="fa-solid fa-circle-down"></i>
                     <span className="ps-2">{traduction[language].Download}</span>
                 </Button>

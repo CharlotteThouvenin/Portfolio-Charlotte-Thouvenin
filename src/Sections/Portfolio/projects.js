@@ -2,7 +2,7 @@ export const workData = {
     fr: [
         {
             id: 0,
-            img: 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/mignature.png',
+            img: 'https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin/images/mignature.webp',
             title: 'Portfolio',
             description: "Mon portfolio en ligne. J'ai utlisé plusieurs librairies pour ce site, notamment react-slick et react-scroll-parallax.",
             url: "https://charlottethouvenin.github.io/Portfolio-Charlotte-Thouvenin",

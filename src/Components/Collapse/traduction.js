@@ -3,33 +3,39 @@ const traduction = {
         title: "Web Integration Training",
         date: "2024",
         place: "OpenClassRooms",
-        description: ""
+        description: "During this in-depth training, I acquired the skills needed to design, develop and optimize complete, responsive web applications. This training also enabled me to master the most in-demand technologies and languages such as HTML, CSS, SASS, JavaScript, React & Redux, API calls, as well as essential tools like Visual Studio Code, responsive design, and Git & GitHub."
     },
     {
         title: "Self-employment",
         date: "2023",
         place: "Real estate",
-        description: ""
+        description: "Independent real estate agents"
     },
     {
         title: "Marketing & Purchasing",
         date: "2012 - 2022",
         place: "Retail",
-        description: ""
+        description: "Several positions in Marketing and Purchasing."
     },
     {
         title: "Management degree",
         date: "2012",
         place: "Business School",
-        description: ""
+        description: "Generalist training in marketing, finance, HR and management."
     }
     ],
     fr: [
         {
-            title: "Formation Intégrateur Web",
+            title: "Formation Node.js",
+            date: "2024",
+            place: "Dyma.fr",
+            description: "Formation Node.js,Express.js et MongoDb pour la création d'application web fullastack",
+        },
+        {
+            title: "Certification professionnel Développeur Intégrateur web de niveau 5",
             date: "2024",
             place: "OPENCLASSROOMS",
-            description: "Formation en développement web front end. Parcours sous forme de 11 situations professionnels couvrant les domaines suivant: développement de site, déboggage, gestion de projets et référencement naturel."
+            description: "Au cours de cette formation approfondie, j'ai acquis les compétences nécessaires pour concevoir, développer et optimiser des applications web complètes et réactives. Cette formation m'a également permis de maîtriser les technologies et les langages les plus demandés tels que HTML, CSS, SASS, JavaScript, React & Redux, les appels API, ainsi que les outils essentiels comme Visual Studio Code, le responsive design, et Git & GitHub."
         },
         {
             title: "Auto-entrepreneur",

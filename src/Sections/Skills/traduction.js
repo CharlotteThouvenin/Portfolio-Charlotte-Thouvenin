@@ -7,7 +7,8 @@ const traduction = {
             "Debug and use tests",
             "Create and improve SEO",
             "Make API calls",
-            "Write clean, structured and easily maintainable code"],
+            "Write maintainable code",
+            "Create css animationsll:"],
         subtitle3: "Soft skills",
         soft: ["Team player", "Calm and thoughtful", "Pugnacious", "Autonomous", "Clear and easy communication"]
     },
@@ -15,7 +16,7 @@ const traduction = {
         title: "Compétences",
         subtitle1: "Compétences techniques",
         subtitle2: "Compétences métier",
-        pro: ["Intégrer une interface utilisateur responsive", "Débogger un site et utiliser des tests", "Créer et améliorer le référencement d'un site", "Effectuer des call API", "Ecrire un code propre, structuré et facilement maintenable"],
+        pro: ["Intégrer une interface utilisateur responsive", "Débogger un site en utilisant des tests", "Créer et améliorer le référencement d'un site", "Communiquer avec le BackEnd en effectuant des call API", "Ecrire un code facilement maintenable", "Créer des animations dynamique"],
         subtitle3: "Savoir-être",
         soft: ["Travaille en équipe", "Calme et réfléchie", "Pugnace", "Autonome", "Communication claire et aisée"]
 

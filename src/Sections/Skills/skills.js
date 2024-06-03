@@ -7,6 +7,8 @@ const skillData = [
     { name: "Sass", icon: "fa-brands fa-sass" },
     { name: "Bootstrap", icon: "fa-brands fa-bootstrap" },
     { name: "Git & GitHub", icon: "fa-brands fa-github" },
+    { name: "Node.JS", icon: "fa-brands fa-node" },
+    { name: "Express.JS" }
 ];
 
 export default skillData;
